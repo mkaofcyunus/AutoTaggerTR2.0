@@ -25,11 +25,11 @@ async def cancel(event):
 
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
-  await event.reply("Hi I'm @AutoTagger_bot I was created to search all contacts in chat.\nMerhaba! Grubunuzdaki Kullanıcıları Etiketlemek İçin Yaratıldım. Beni Grubunuza Ekleyin ve Gerisini Bana Bırakın.",
+  await event.reply("Hi I'm @etikettaggerbot I was created to search all contacts in chat.\nMerhaba! Grubunuzdaki Kullanıcıları Etiketlemek İçin Yaratıldım. Beni Grubunuza Ekleyin ve Gerisini Bana Bırakın.",
                     buttons=(
-                      [Button.url('➕Beni Bir Gruba Ekle➕', 'https://t.me/autotagger_bot?startgroup=a'),
-                       Button.url('🧑‍🔧Developer', 'https://t.me/tht_herlock'),
-                      Button.url('📣Resmi Kanal', 'https://t.me/HerlockBots')]
+                      [Button.url('➕Beni Bir Gruba Ekle➕', 'https://t.me/etikettaggerbot?startgroup=a'),
+                       Button.url('🧑‍🔧Developer', 'https://t.me/mkaofc'),
+                      Button.url('📣Resmi Kanal', 'https://t.me/etikettag')]
                     ),
                     link_preview=False
                    )
@@ -43,9 +43,9 @@ async def help(event):
 ❕ Yalnızca yöneticileri bu komutları kullanabilir."""
   await event.reply(helptext,
                     buttons=(
-                      [Button.url('➕Beni Bir Gruba Ekle➕', 'https://t.me/autotagger_bot?startgroup=a'),
-                       Button.url('🧑‍🔧Developer', 'https://t.me/tht_herlock'),
-                      Button.url('📣Resmi Kanal', 'https://t.me/HerlockBots')]
+                      [Button.url('➕Beni Bir Gruba Ekle➕', 'https://t.me/etikettaggerbot?startgroup=a'),
+                       Button.url('🧑‍🔧Developer', 'https://t.me/mkaofc'),
+                      Button.url('📣Resmi Kanal', 'https://t.me/etikettag')]
                     ),
                     link_preview=False
                    )
